@@ -1,0 +1,197 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* ── CARD WRAPPER ── */
+  .card {
+    position: relative;       
+    width: 860px;
+    height: 480px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0,0,0,.18);
+  }
+
+  /* ── LEFT YELLOW PANEL ── */
+  .panel-left {
+    position: absolute;
+    top: 0; left: 0;
+    width: 62%;
+    height: 100%;
+    background: #FFC107;
+    border-radius: 18px 0 0 18px;
+    z-index: 1;
+  }
+
+  /* ── RIGHT CREAM PANEL ── */
+  .panel-right {
+    position: absolute;
+    top: 0; right: 0;
+    width: 50%;
+    height: 100%;
+    background: #FFF9E6;
+    border-radius: 0 18px 18px 0;
+    z-index: 0;
+  }
+
+  /* ── POKÉBALL WATERMARK ── */
+  .pokeball {
+    position: absolute;
+    bottom: -60px;
+    left: -30px;
+    width: 240px;
+    height: 240px;
+    z-index: 2;
+    opacity: .18;
+  }
+
+  .pokeball-outer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 22px solid #E6A800;
+  }
+
+  /* top half line */
+  .pokeball-line {
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    right: -22px;
+    height: 22px;
+    background: #E6A800;
+    transform: translateY(-50%);
+  }
+
+  /* centre circle */
+  .pokeball-center {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    border: 22px solid #E6A800;
+    transform: translate(-50%, -50%);
+    background: #FFC107;
+  }
+
+  /* ── LOGO ── */
+  .logo {
+    position: absolute;
+    top: 28px; left: 32px;
+    z-index: 10;
+    height: 20px;
+    width: 10px;
+    margin: 5px;
+    padding: 5px;
+
+  }
+
+  /* ── HAMBURGER ── */
+  .menu {
+    position: absolute;
+    top: 32px; right: 32px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .menu span {
+    display: block;
+    width: 28px; height: 3px;
+    background: #333;
+    border-radius: 2px;
+  }
+
+  /* ── TEXT CONTENT ── */
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+    z-index: 10;
+    max-width: 340px;
+  }
+
+  .gen-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #7a5c00;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+
+  .pokemon-name {
+    font-size: 78px;
+    font-weight: 900;
+    color: #111;
+    line-height: 1;
+    margin-bottom: 18px;
+    letter-spacing: -2px;
+  }
+
+  .pokemon-desc {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.65;
+    margin-bottom: 28px;
+    max-width: 290px;
+  }
+
+  .counter {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .counter::before {
+    content: '';
+    display: block;
+    width: 36px; height: 2px;
+    background: #333;
+  }
+
+  /* ── PIKACHU IMAGE ── */
+  .pikachu {
+    position: absolute;
+    bottom: -10px;
+    right: 20px;           
+    z-index: 5;
+    width: 420px;
+    height: auto;
+  }
+
+  /* ── DOT NAVIGATION ── */
+  .dots {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #cbb870;
+  }
+
+  .dot.active { background: #333; }

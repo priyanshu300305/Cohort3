@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon - Pikachu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+  <!-- Panels -->
+  <div class="panel-left"></div>
+  <div class="panel-right"></div>
+
+  <!-- Pokéball watermark (nested absolutes inside relative parent) -->
+  <div class="pokeball">
+    <div class="pokeball-outer">
+      <div class="pokeball-line"></div>
+      <div class="pokeball-center"></div>
+    </div>
+  </div>
+
+  <!-- Logo -->
+  <div class="logo">
+    <img height="50" width="100" src=".\logo.png" alt="Pokémon Logo">
+    </div>
+
+  <!-- Hamburger menu -->
+  <div class="menu">
+    <span></span><span></span><span></span>
+  </div>
+
+  <!-- Text -->
+  <div class="content">
+    <p class="gen-label">Pokemon Gen I</p>
+    <h1 class="pokemon-name">Pikachu</h1>
+    <p class="pokemon-desc">
+      Pikachu is an Electric-type Pokémon introduced in Generation I.
+      Pikachu are small, chubby, and incredibly cute mouse-like Pokémon.
+      They are almost completely covered by yellow fur.
+    </p>
+    <div class="counter">01 / 08</div>
+  </div>
+
+  <!-- Pikachu PNG from PokeAPI sprites (free & public) -->
+  <img
+    class="pikachu"
+    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+    alt="Pikachu"
+  />
+
+  <!-- Dot nav -->
+  <div class="dots">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+</div>
+
+</body>
+</html>

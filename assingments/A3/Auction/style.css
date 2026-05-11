@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Acumin;
+    src: url(./Ass_2_easy_assets/AcuminR.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: "Acumin";
+}
+
+body{
+ /* border: solid green; */
+ padding: 2% 2% 2% 2%;
+ background-image: url(./Assets/background.png);
+ background-size: cover;
+ background-position: center;
+ color: white;
+}
+
+nav{
+    /* border: solid ; */
+    text-align: end;
+    padding: 0 8%;
+
+}
+nav:hover{
+    color: #b077e3;
+    cursor: pointer;
+}
+header{
+    /* border: solid red; */
+    padding: 0 8%;
+    margin-bottom: 10px;
+}
+h1{
+    all: unset;
+    font-size: x-large;
+}
+main{
+    /* border: solid yellow; */
+    height: 95%;
+    padding: 0 5% 0 5%;
+}
+
+.cardContainer{
+    /* border: solid green; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:5%;
+}
+
+.card{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px); 
+    flex-basis: 17%;
+    /* border: solid ; */
+width: 20%;
+height: 47%;
+border-radius: 20px;
+/* margin-bottom: 3%; */
+padding: 2%;
+}
+
+.card .image{
+    border: solid;
+    width: 100%;
+    height: 60%;
+    border-radius:17px ;
+    overflow: hidden;
+}
+.card .image:hover{
+    border-color: #b077e3;
+    cursor: pointer;
+    scale: 1.01;
+}
+.image img{
+    /* object-fit: contain; */
+    width: 100%;
+}
+
+.card .textContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: solid; */
+    height: 40%;
+}
+
+.card .textContent .description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: solid; */
+    padding-top: 8%;
+    margin: 1%;
+    height: 30%;
+}
+.textContent .description .itemName{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.textContent .description .likes {
+    /* border: solid; */
+    width: 40%;
+    display: flex;
+    gap: 15%;
+    align-items: center;
+    justify-content: space-between;
+}
+.likes .likeIcon img{
+    width: 25px;
+    filter: invert(100%);
+    
+}
+.likeIcon img:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.textContent .capsuleButton{
+border: solid #b077e3;
+font-size: larger;
+padding: 0 30px;
+background-color: transparent;
+height: 40%;
+color: white;
+font-weight: bold;
+border-radius: 9999px;
+}
+
+.textContent .capsuleButton:hover{
+    color: #b077e3;
+    scale: 1.01;
+    cursor: pointer;
+}
+

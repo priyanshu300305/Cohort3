@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Orbitron', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #02080D;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+}
+
+.left-nav img {
+    height: 3.5vw;
+}
+
+
+.center-nav {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-nav p {
+    font-size: 1vw;
+}
+
+.center-nav p:hover {
+    cursor: pointer;
+    color: #12B59D;
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.right-nav button {
+    padding: 1vw 2vw;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #0BAE94;
+    border-radius: 50px;
+    font-size: 1vw;
+}
+
+.page-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.left-page-1 {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 3vw;
+    gap: 0.5vw;
+    padding-top: 3vw;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-1-page-1 h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #12B59D;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.box-2-page-1 h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 7vw;
+    line-height: 6vw;
+}
+
+h1 span {
+    color: #12B59D;
+}
+
+.box-3-page-1 h3 {
+
+    font-family: 'Poppins', sans-serif;
+    color: rgba(204, 194, 194, 0.781);
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 1.9vw;
+    text-transform: uppercase;
+}
+
+.box-4-page-1 p {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5vw;
+    font-size: 1.1vw;
+    color: rgba(204, 194, 194, 0.5);
+}
+
+.center-page-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-page-1 img {
+    height: 45vw;
+    padding-left: 17vw;
+    position: absolute;
+    left: 17vw;
+    top: 4vw;
+}
+
+.right-page-1 {
+    display: flex;
+    align-items: center;
+    margin-right: 5vw;
+    margin-top: 8vw;
+    justify-content: center;
+}
+
+.right-page-1 img {
+    height: 25vw;
+}
+
+.box-4-page-1 {
+    display: flex;
+    gap: 1vw;
+}
+
+.box-4-page-1 button {
+    margin-top: 3vw;
+    font-size: 1.2vw;
+    padding: 0.1vw 2vw;
+    border-radius: 0.5vw;
+    color: white;
+    background: transparent;
+    border: 1px solid rgba(84, 255, 220, 0.7);
+    /* box-shadow:
+        0 0 18px rgba(56, 255, 211, 0.35),
+        inset 0 0 12px rgba(255, 255, 255, 0.05);
+    border: none; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+button:hover {
+    scale: 1.02;
+    cursor: pointer;
+}
+
+.page-2 {
+    margin-top: 5.2vw;
+    padding: 0vw 3vw 1vw 3vw;
+}
+
+.inner-page-2 {
+    height: 15vw;
+    width: 93vw;
+    background: linear-gradient(90deg,
+            #071018 0%,
+            #0a1f2b 20%,
+            #0f3a46 50%,
+            #0a1f2b 80%,
+            #071018 100%);
+    border: 1px solid rgba(103, 246, 255, 0.08);
+    box-shadow:
+        inset 0 0 40px rgba(0, 255, 255, 0.08),
+        0 0 30px rgba(33, 39, 39, 0.06);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
+    border-radius: 1vw;
+}
+
+.inner-page-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.box-1-page-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+.box-1-page-2 h3 {
+    color: #0BAE94;
+    font-size: 3vw;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.box-1-page-2 p {
+    color: white;
+    font-size: 1.2vw;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.box-1-page-2 img {
+    height: 20vw;
+    margin-bottom: 10vw;
+
+}
+
+
+.page-3 {
+    position: relative;
+}
+
+.page-3 img {
+    bottom: 2vw;
+    position: absolute;
+}
+
+.right-img {
+    height: 17vw;
+    bottom: 20vw;
+}
+
+.left-img {
+    left: 75vw;
+    height: 20vw;
+}
+
+.page-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 2vw;
+}
+
+.center-page-3 {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8vw;
+    flex-direction: column;
+}
+
+.center-page-3 p {
+    font-size: 2vw;
+    color: #0BAE94;
+}
+
+
+.center-page-3 h3 {
+    font-size: 3vw;
+}
+
+.right-page-3 {
+    display: flex;
+    gap: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-page-3 p {
+    border: 1px solid rgb(158, 151, 151);
+    padding: 1vw;
+    border-radius: 50vw;
+    color: rgb(158, 151, 151);
+    font-size: 2vw;
+}
+
+.right-page-3 p:hover {
+    cursor: pointer;
+    color: #0BAE94;
+    border: 1px solid #0BAE94;
+    transform: all ease 0.5s;
+    scale: 1.01
+}
+
+.page-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    gap: 3vw;
+}
+
+.box-page-4 {
+    height: 30vw;
+    width: 25vw;
+    border: 1px solid rgba(43, 40, 40, 0.781);
+    border-radius: 1vw;
+}
+
+.box-page-4:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px #0BAE94,
+        0 0 40px #0BAE94;
+    scale: 1.01;
+    transition: 0.5s;
+}
+
+.top-box {
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    height: 55%;
+    width: 100%;
+    background-size: cover;
+}
+
+.img-11 {
+    background-image: url("./Assets/hockey.png");
+}
+
+.img-22 {
+    background-image: url("./Assets/genesis.png");
+}
+
+.img-33 {
+    background-image: url("./Assets/img3.png");
+}
+
+.bottom-box {
+    width: 100%;
+    color: rgba(204, 194, 194, 0.781);
+    padding: 1vw;
+}
+
+.bottom-box p {
+    font-size: 1.3vw;
+    line-height: 1.7vw;
+    font-family: "Poppins", sans-serif;
+}
+
+.bottom-box button {
+    padding: 0.9vw 2vw;
+    border-radius: 10vw;
+    font-size: 1vw;
+    color: #0BAE94;
+    border: 1px solid #0BAE94;
+    background-color: transparent;
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-5 {
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1vw 2vw;
+}
+
+.page-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    padding-bottom: 3vw;
+    gap: 1vw;
+}
+
+.box-1-page-6 {
+    border-radius: 1vw;
+    height: 12vw;
+    width: 22vw;
+    border: 1px solid rgba(43, 40, 40, 0.781);
+    display: flex;
+}
+
+.left-img-page-6 {
+    height: 100%;
+    padding: 1vw;
+    width: 40%;
+}
+
+.left-img-page-6 img {
+    border: 1px solid #0bae9357;
+    padding: 1vw;
+    border-radius: 100%;
+    height: 6vw;
+    align-self: center;
+    justify-self: center;
+}
+
+.right-img-page-6 {
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1vw;
+    flex-direction: column;
+    padding-top: 1vw;
+    padding: 1vw;
+}
+
+.right-img-page-6 h3 {
+    font-size: 2vw;
+    color: #0BAE94;
+}
+
+.right-img-page-6 h5 {
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.right-img-page-6 p {
+    font-size: 1.2vw;
+    color: rgba(255, 255, 255, 0.233);
+}
+
+.page-7 {
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+    justify-content: center;
+    height: 17vw;
+    width: 91vw;
+    border: 1px solid rgba(43, 40, 40, 0.781);
+    margin-left: 4vw;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+    background-image: url("./Assets/foot-img.webp");
+
+}
+
+.box-2-page-7 {
+    display: flex;
+}
+
+.innnr-1 {
+    color: rgba(255, 255, 255, 0.521);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.1vw;
+    gap: 1vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    border-right: 1px solid rgba(255, 255, 255, 0.493);
+    padding-right: 2vw;
+}
+
+
+.innnr-1 img {
+    height: 3vw;
+}
+
+.flex-img {
+    display: flex;
+    gap: 2vw;
+}
+
+
+.flex-img img {
+    height: 4vw;
+    border: 1px solid #0bae9363;
+    padding: 1vw;
+    border-radius: 100%;
+}
+
+.flex-img img:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.innnr-2 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2vw;
+    gap: 1vw;
+    margin-left: 2vw;
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.innnr-2 p:hover{
+    cursor: pointer;
+    scale: 1.01;
+    transition: 0.3s;
+    color: #12B59D;
+}
+
+.page-8 {
+    color: rgba(255, 255, 255, 0.521);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-size: 1vw;
+    padding: 0.5vw 4vw;
+}
+
+.page-8-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+
+}

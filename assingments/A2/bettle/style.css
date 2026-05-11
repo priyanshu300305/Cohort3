@@ -1,0 +1,258 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.752);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+  width:100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.left{
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+.left nav{
+  height: 15%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 140px 10px 60px; 
+}
+.left nav h1{
+  font-size: 30px;
+  text-transform: uppercase;
+ 
+  font-weight: 700;
+}
+.search-box{
+  position: relative;
+  width: 250px;
+}
+
+.search-box input{
+  width:100%;
+  padding: 14px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(236, 228, 228, 0.699);
+  
+}
+.search-box input::placeholder{
+  padding-left: 44px;
+  font-size: 16px;
+ 
+  font-weight: 600
+}
+
+.search-box i{
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  font-size: 20px;
+  color: gray;
+}
+
+section{
+  display: flex;
+  align-items: center; 
+  gap: 100px;
+  padding: 80px 100px;
+}
+
+section .class{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 50px;
+  font-style: italic;
+  letter-spacing: 3px;
+  font-weight: 600
+}
+section ul{
+  display: flex;
+  flex-direction:column ;
+  gap: 10px;
+ 
+}
+ section ul li{
+  border-bottom: 1px solid rgba(122, 111, 111, 0.36);
+  padding-bottom: 10px;
+
+   padding-top: 10px;
+ }
+
+  section ul li strong{
+    font-size: 16px;
+
+  }
+   section ul li span{
+    font-weight: 500;
+    color: rgb(104, 102, 102)
+   }
+.right{
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.729);
+}
+.right #nav{
+  width: 100%;
+  height: 100px;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+
+}
+
+.right #nav .menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+.right #nav .menu p{
+  font-size: 18px;
+  color: rgb(213, 207, 207);
+
+  font-weight: 500;
+}
+#cont{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: -20px;
+
+}
+
+#cont>h1{
+ color: white;
+ font-size: 3.2rem;
+  font-weight: 400
+}
+.det{
+  display: flex;
+  gap: 30px;
+}
+.beetle{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  border-right: 2px solid rgba(214, 202, 202, 0.623);
+}
+.beetle .img{
+  width: 100px;
+  height: 100px;
+  
+ 
+}
+.beetle .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.beetle span{
+  color:white ;
+  font-size: 16px;
+ 
+  font-weight: 500;
+  opacity: 0.8;
+  margin-top: -10px;
+}
+
+.des{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 10px;
+}
+.box{
+ display: flex;
+ gap: 10px;
+}
+
+.box i{
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 26px;
+
+}
+
+.box span{
+  color: rgba(255, 255, 255, 0.836);
+  
+  font-size: 16px;
+}
+
+.price{
+  font-size: 2.4rem;
+  color: antiquewhite;
+  font-weight: 700;
+ 
+}
+.group_p{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  
+}
+.p{
+  display: flex;
+  gap:10px;
+  position: relative;
+}
+.p .circle{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+.p input{
+  width:35px;
+  height: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(250, 235, 215, 0.673);
+}
+.p p{
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.834);
+  
+}
+
+button{
+  width:fit-content;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgb(240, 220, 195);
+  margin-top: 10px;
+}
+
+.D{
+  width: 340px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.D img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
