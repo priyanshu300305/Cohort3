@@ -60,6 +60,7 @@ console.log(document.body);
 // document.body.style.color= "white";
 
 /*
+
 //text change----
 -textContent
 -innerText
