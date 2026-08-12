@@ -3,6 +3,7 @@ console.log("hello, this is DOM day2");
 
 console.log(document);
 
+
 const body= document.body  // select BODY
 const main= document.querySelector("main")
 
