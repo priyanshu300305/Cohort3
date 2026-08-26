@@ -55,6 +55,7 @@ const inp2 = document.querySelector("#email");
 const users = document.querySelector(".users");
 const url = document.querySelector("#url");
 
+let editIndex = null;
 
 let usersData = [
     {
@@ -115,7 +116,7 @@ const ui = () => {
                 <p>Email - ${elem.email}</p>
             </div>
             <div class="actions">
-            <button id="edit">Edit</button>
+          <button onclick="editCard(${index})">Edit</button>
             <button onclick="deleteCard(${index})" id="del">Delete</button>
             </div>
         </div>`;
@@ -134,18 +135,28 @@ form.addEventListener("submit", (events) => {
     let email = inp2.value;
     let imageURL = url.value;
     if (name.trim() === "" && email.trim() === "") return;
+    
+    if (editIndex !== null) {
+        // Update existing user
+        usersData[editIndex] = {
+            name,
+            email,
+            imageURL
+        };
+
+        editIndex = null;
+    } else {
+        // Add new user
     usersData.push({
         name,
         email,
         imageURL,
     });
-
+}
     ui();
     console.log(usersData);
 
     form.reset();
-
-
 });
 
 let deleteCard = (index) =>{
@@ -153,4 +164,21 @@ let deleteCard = (index) =>{
     console.log(usersData);
     ui();
     
+};
+
+function editCard(index) {
+    let user = usersData[index];
+
+    // Put existing data into the form
+    inp1.value = user.name;
+    inp2.value = user.email;
+    url.value = user.imageURL;
+
+    let editIndex = null;
+
+    // Remove old user
+    usersData.splice(index, 1);
+
+    // Refresh cards
+    ui();
 };
