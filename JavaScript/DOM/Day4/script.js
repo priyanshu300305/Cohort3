@@ -143,7 +143,7 @@ form.addEventListener("submit", (events) => {
             email,
             imageURL
         };
-
+ 
         editIndex = null;
     } else {
         // Add new user
@@ -181,4 +181,4 @@ function editCard(index) {
 
     // Refresh cards
     ui();
-};
+}; 
