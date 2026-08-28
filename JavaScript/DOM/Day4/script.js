@@ -135,7 +135,7 @@ form.addEventListener("submit", (events) => {
     let email = inp2.value;
     let imageURL = url.value;
     if (name.trim() === "" && email.trim() === "") return;
-    
+
     if (editIndex !== null) {
         // Update existing user
         usersData[editIndex] = {
@@ -147,23 +147,23 @@ form.addEventListener("submit", (events) => {
         editIndex = null;
     } else {
         // Add new user
-    usersData.push({
-        name,
-        email,
-        imageURL,
-    });
-}
+        usersData.push({
+            name,
+            email,
+            imageURL,
+        });
+    }
     ui();
     console.log(usersData);
 
     form.reset();
 });
 
-let deleteCard = (index) =>{
-    usersData.splice(index,1);
+let deleteCard = (index) => {
+    usersData.splice(index, 1);
     console.log(usersData);
     ui();
-    
+
 };
 
 function editCard(index) {
