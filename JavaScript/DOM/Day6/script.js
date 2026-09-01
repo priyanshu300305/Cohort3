@@ -5,6 +5,8 @@ const form = document.querySelector("form");
 
 const productDiv = document.querySelector(".products")
 
+// localStorage implementation 
+
 const productsArr = JSON.parse(localStorage.getItem("products")) || [];
 
 console.log(productsArr);
@@ -105,7 +107,7 @@ const updateProduct = (name) => {
 
 const deleteProduct = (index) => {
     productsArr.splice(index, 1);
-    localStorage.setItem("products",JSON.stringify(productsArr));
+    localStorage.setItem("products", JSON.stringify(productsArr));
     ui();
 
 };
