@@ -1,5 +1,5 @@
 const App= () => {
-  return "hello";
+  return "hello React day 2";
 
 };
 
